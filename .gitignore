@@ -2,7 +2,7 @@
 web/app/plugins/*
 !web/app/plugins/.gitkeep
 !web/app/plugins/advanced-custom-fields-pro
-!web/app/plugins/atsichs-block
+!web/app/plugins/bshub-block
 web/app/mu-plugins/*/
 web/app/upgrade
 web/app/uploads/*
