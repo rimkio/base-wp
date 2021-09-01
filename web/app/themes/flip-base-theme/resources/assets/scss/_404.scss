@@ -1,0 +1,105 @@
+@keyframes rocket-movement {
+    100% {
+        transform: translate(1200px, -600px);
+    }
+}
+
+@keyframes spin-earth {
+    100% {
+        -webkit-transform: rotate(-360deg);
+        transform: rotate(-360deg);
+        transition: transform 20s;
+    }
+}
+
+@keyframes move-astronaut {
+    100% {
+        -webkit-transform: translate(-160px, -160px);
+        transform: translate(-160px, -160px);
+    }
+}
+
+@keyframes rotate-astronaut {
+    100% {
+        -webkit-transform: rotate(-720deg);
+        transform: rotate(-720deg);
+    }
+}
+
+@keyframes glow-star {
+    40% {
+        -webkit-opacity: 0.3;
+        opacity: 0.3;
+    }
+    90%, 100% {
+        -webkit-opacity: 1;
+        opacity: 1;
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+        border-radius: 999999px;
+    }
+}
+
+.f48 {
+
+}
+
+body.error404 {
+    //background-color: black;
+    //
+    //.site-wrap {
+    //    background: url(../images/background.png) 50% no-repeat #000;
+    //    background-size: contain;
+    //}
+    .site-main {
+        min-height: unset;
+    }
+
+    h1 {
+        font-size: 180px;
+        color: $accentColor;
+        font-weight: bold;
+        font-style: italic;
+        line-height: 1;
+    }
+
+    .des {
+        text-transform: uppercase;
+        font-size: 2.5em;
+        font-weight: 700;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    //p {
+    //    font-weight: bold;
+    //}
+
+    .central-body {
+        //padding: 17% 5% 10% 5%;
+        //text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 40vh;
+        position: relative;
+        z-index: 2;
+    }
+
+    .stars {
+        background-size: contain;
+        background: url("../images/overlay_stars.svg") repeat left top;
+    }
+
+    @include media-breakpoint-down('xs') {
+        .central-body {
+            padding-top: 25%;
+        }
+        h1 {
+            font-size: 130px;
+        }
+        .des {
+            font-size: 1.5rem;
+        }
+    }
+}
